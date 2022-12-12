@@ -1,2 +1,2 @@
-# forgotten_exchanger_bot
-exchange rates
+# [http://t.me/forgotten_exchanger_bot](Telegram Exchanger Bot)
+
