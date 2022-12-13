@@ -8,7 +8,6 @@ from bot.config import TELEGRAM_TOKEN
 from bot.handlers import register_handlers
 from bot.filters import bind_filters
 
-
 log = logging.getLogger(__name__)
 log.setLevel(os.environ.get('LOGGING_LEVEL', 'INFO').upper())
 
