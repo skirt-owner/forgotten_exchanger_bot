@@ -1,8 +1,11 @@
 import os
 import json
 import logging
+import asyncio
 
-from aiogram import Bot, Dispatcher, types
+from aiogram import Bot, Dispatcher, types, executor
+from aiogram.contrib.fsm_storage.memory import MemoryStorage
+from aiogram.types.message import ParseMode
 
 from bot.config import TELEGRAM_TOKEN
 from bot.handlers import register_handlers
@@ -23,7 +26,8 @@ async def process_event(event, dp: Dispatcher):
 async def handler(event, context):
     if event['httpMethod'] == 'POST':
         bot = Bot(TELEGRAM_TOKEN)
-        dp = Dispatcher(bot)
+        storage = MemoryStorage()
+        dp = Dispatcher(bot, storage=storage)
         await register_handlers(dp)
         await bind_filters(dp)
         await process_event(event, dp)
