@@ -11,4 +11,4 @@ A simple Telegram bot that allows you to work with different currencies at any t
 - [x] Save your favorite currencies for further use.
 
 ## Contact with me
-[![telegram badge](https://img.shields.io/badge/telegram-contact-blue)](https://t.me/el_el_k)
+[![telegram badge](https://img.shields.io/badge/telegram-contact-blue)](https://t.me/skirtowner)
